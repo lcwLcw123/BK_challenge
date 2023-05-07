@@ -1,0 +1,13 @@
+# mp4
+*.mp4
+*.jpg
+# jpg
+*.jpg
+# png
+*.png
+/test_data
+#.pth
+*.pth
+
+#.pt
+*.pt
