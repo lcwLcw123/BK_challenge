@@ -94,23 +94,23 @@ class Model_load(nn.Module):
 
 
 
-# torch.backends.cudnn.deterministic = True
-# device = torch.device("cuda")
-# print("CUDA visible devices: " + str(torch.cuda.device_count()))
-# print("CUDA Device Name: " + str(torch.cuda.get_device_name(device)))
+torch.backends.cudnn.deterministic = True
+device = torch.device("cuda")
+print("CUDA visible devices: " + str(torch.cuda.device_count()))
+print("CUDA Device Name: " + str(torch.cuda.get_device_name(device)))
 
 
-# model_bokeh_1000 = CUGAN(in_nc=3,out_nc=3,cond_dim=2,stages_blocks_num=[2,2,2],stages_channels=[32,64,128],downSample_Ksize=2).to(device)
-# model_bokeh_1000 = torch.nn.DataParallel(model_bokeh_1000.cuda())
+model_bokeh_1000 = CUGAN(in_nc=3,out_nc=3,cond_dim=2,stages_blocks_num=[2,2,2],stages_channels=[32,64,128],downSample_Ksize=2).to(device)
+model_bokeh_1000 = torch.nn.DataParallel(model_bokeh_1000.cuda())
 
-# model_path_bokeh_1000 = "/home/chenzigeng/dehaze/NTIRE23BokehTransformation/examples/modelzoo_mse/bokeh128_mse_1.0_3_21_epoch0.pth"
-# #----------------------------------------------------------------------------------------------------------------------------------
+model_path_bokeh_1000 = "/home/chenzigeng/dehaze/NTIRE23BokehTransformation/examples/modelzoo_mse/bokeh128_mse_1.0_3_21_epoch0.pth"
+#----------------------------------------------------------------------------------------------------------------------------------
 
-# PATH = "model_hw.pt"
-# # model = Model() 
-# torch.save({
-#             'model_path_bokeh_1000': torch.load(model_path_bokeh_1000),
-#             }, PATH)
+PATH = "saved_models/model_hw.pt"
+# model = Model() 
+torch.save({
+            'model_path_bokeh_1000': torch.load(model_path_bokeh_1000),
+            }, PATH)
 
-# print('save ok!')
-# model2 = Model_load()
+print('save ok!')
+model2 = Model_load()
