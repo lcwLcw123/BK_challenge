@@ -2,8 +2,6 @@
 
 ## Environment 
 you can look for the 'requirements.txt' to see the requirements
-<<<<<<< HEAD
-=======
 
 for a new environment you can run below codes
 ```
@@ -38,7 +36,6 @@ put the video into ```BKchallenge/huawei_task/huawei_video```
 #run:
 sh test.sh
 ```
->>>>>>> 0f2bc33fcabb745809cf4267abc629d4a0570d36
 
 
 ## Foreground segmentation module(ISNet)
@@ -46,11 +43,6 @@ sh test.sh
 https://github.com/xuebinqin/U-2-Net
 
 
-
-
-
-
-```
 
 ## Train 
 dataset download link: https://glass-data.s3.amazonaws.com/Bokeh-Challenge/Ntire23-Bokeh-v7/ntire23-bokeh-v7-train.zip
@@ -73,11 +65,3 @@ put the video into ```BKchallenge/huawei_task/huawei_video```
 #run:
 sh test.sh
 ```
-
-
-## Foreground segmentation module(ISNet)
-
-<<<<<<< HEAD
-https://github.com/xuebinqin/U-2-Net
-=======
->>>>>>> 0f2bc33fcabb745809cf4267abc629d4a0570d36
