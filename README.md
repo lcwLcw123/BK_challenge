@@ -18,7 +18,7 @@ pip install requirements.txt
 ## Train 
 dataset download link: https://glass-data.s3.amazonaws.com/Bokeh-Challenge/Ntire23-Bokeh-v7/ntire23-bokeh-v7-train.zip
 
-将前19500图片及其metadata放入 data/train, 将后500张图片及其metadata放入data/val
+将前19500图片及其metadata, mask放入 data/train, 将后500张图片及其metadata, mask放入data/val
 
 ```
 python train_bokeh.py
