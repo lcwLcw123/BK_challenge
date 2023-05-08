@@ -42,6 +42,8 @@ sh test.sh
 
 https://github.com/xuebinqin/U-2-Net
 
+Inference时使用ISNet生成前景分割mask，训练时使用训练集自带的alpha mask
+
 
 
 ## Train 
