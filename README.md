@@ -2,6 +2,8 @@
 
 ## Environment 
 you can look for the 'requirements.txt' to see the requirements
+<<<<<<< HEAD
+=======
 
 for a new environment you can run below codes
 ```
@@ -36,8 +38,46 @@ put the video into ```BKchallenge/huawei_task/huawei_video```
 #run:
 sh test.sh
 ```
+>>>>>>> 0f2bc33fcabb745809cf4267abc629d4a0570d36
 
 
 ## Foreground segmentation module(ISNet)
 
 https://github.com/xuebinqin/U-2-Net
+
+
+
+
+
+
+```
+
+## Train 
+dataset download link: https://glass-data.s3.amazonaws.com/Bokeh-Challenge/Ntire23-Bokeh-v7/ntire23-bokeh-v7-train.zip
+
+将前19500图片及其metadata, mask放入 data/train, 将后500张图片及其metadata, mask放入data/val
+
+```
+python train_bokeh.py
+```
+
+
+
+## Test
+Download the pretrained model from [Google Drive](https://drive.google.com/drive/folders/153mUXfsuc73jlz19Hhr1p1fOZoMsXNAQ), and place it in the folder `saved_models`. 
+Run the following code to generate test results.
+
+put the video into ```BKchallenge/huawei_task/huawei_video```
+
+```
+#run:
+sh test.sh
+```
+
+
+## Foreground segmentation module(ISNet)
+
+<<<<<<< HEAD
+https://github.com/xuebinqin/U-2-Net
+=======
+>>>>>>> 0f2bc33fcabb745809cf4267abc629d4a0570d36
