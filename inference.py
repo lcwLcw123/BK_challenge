@@ -68,6 +68,6 @@ def train():
         output = output[:,:,(2,1,0)]
         cv2.imwrite("./result/"+id[0]+".jpg", output)
 
-
+#
 if __name__ == "__main__":
     train()
